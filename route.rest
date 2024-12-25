@@ -1,0 +1,76 @@
+###
+GET http://localhost:3005/api/v1/items
+
+###
+
+POST http://localhost:3005/api/v1/items
+Content-Type: application/json
+
+{
+    "text": "New one"
+}
+
+###
+
+PUT http://localhost:3005/api/v1/items
+Content-Type: application/json
+
+{
+    "id": 1,
+    "text": "New",
+    "checked": true
+}
+
+###
+
+POST http://localhost:3005/api/v2/router?action=login
+Content-Type: application/json
+
+{
+    "login":"deda",
+    "password":"yaded"
+}
+
+###
+
+POST http://localhost:3005/api/v2/router?action=register
+Content-Type: application/json
+
+{
+    "login":"deda",
+    "password":"yaded"
+}
+
+
+###
+
+POST http://localhost:3005/api/v2/router?action=logout
+
+###
+
+GET http://localhost:3005/api/v2/router?action=getItems
+
+###
+
+POST http://localhost:3005/api/v2/router?action=createItem
+Content-Type: application/json
+
+{
+    "text": "New one"
+}
+
+###
+
+PUT http://localhost:3005/api/v2/router?action=editItem
+Content-Type: application/json
+
+{
+    "id": 1,
+    "text": "New",
+    "checked": true
+}
+
+###
+
+DELETE http://localhost:3005/api/v2/router?action=deleteItem
+Content-Type: application/json
